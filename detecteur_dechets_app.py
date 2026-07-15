@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import tflite_runtime.interpreter as tflite
+import tensorflow as tf
 from PIL import Image
 
 # Configurer la page mobile
@@ -11,7 +11,7 @@ st.write("Prenez une photo d'un déchet pour l'analyser en temps réel.")
 # Charger le modèle d'IA
 @st.cache_resource
 def charger_modele():
-    interpreter = tflite.Interpreter(model_path="model_unquant.tflite")
+    interpreter = tf.lite.Interpreter(model_path="model_unquant.tflite")
     interpreter.allocate_tensors()
     return interpreter
 
