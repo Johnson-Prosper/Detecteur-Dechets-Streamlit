@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import tensorflow as tf
+import tflite_runtime.interpreter as tflite
 from PIL import Image
 
 # Configurer la page mobile
@@ -11,7 +11,7 @@ st.write("Prenez une photo d'un déchet pour l'analyser en temps réel.")
 # Charger le modèle d'IA
 @st.cache_resource
 def charger_modele():
-    interpreter = tf.lite.Interpreter(model_path="model_unquant.tflite")
+    interpreter = tflite.Interpreter(model_path="model_unquant.tflite")
     interpreter.allocate_tensors()
     return interpreter
 
@@ -45,7 +45,7 @@ try:
 
         # Affichage du verdict
         if score_confiance > 0.70 and classe_detectee != "Vide":
-            st.success(f"🎯 Résultat : **{classe_detectee}** ({score_confiance*100:.1f}%)")
+            st.success(f"Résultat : **{classe_detectee}** ({score_confiance*100:.1f}%)")
         else:
             st.warning("⚠️ Aucun déchet clairement identifié. Réessayez !")
 
