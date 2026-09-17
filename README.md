@@ -1,4 +1,4 @@
-# ♻️ Détecteur de Déchets Intelligent — Tri par IA
+# ♻️ Détecteur de Déchets Intelligent — Tri par IA ♻️
 
 Une application web d'intelligence artificielle conçue pour classifier instantanément les déchets ménagers à partir d'une simple photo. 
 
@@ -6,7 +6,7 @@ Projet développé dans le cadre de **IndabaX Congo 2026**.
 
 ---
 
-## 🌍 Contexte & Vision du Projet
+## Contexte & Vision du Projet
 
 Dans plusieurs villes du Congo (notamment à **Brazzaville** et à **Pointe-Noire**), ainsi que dans de nombreux pays d'Afrique subsaharienne, la gestion et le tri des déchets restent des défis majeurs. L'absence de technologies accessibles pour sensibiliser et assister les citoyens au tri à la source freine le développement du recyclage.
 
@@ -27,7 +27,7 @@ Ce projet a été pensé comme une **solution technologique locale et accessible
 
 ---
 
-## 🚀 Fonctionnement de l'Application
+## Fonctionnement de l'Application
 
 1. L'utilisateur ouvre l'application web depuis son téléphone ou son ordinateur.
 2. Il prend une photo du déchet via la caméra.
@@ -39,7 +39,7 @@ Ce projet a été pensé comme une **solution technologique locale et accessible
 
 ---
 
-## 👥 Équipe & Remerciements
+## Équipe & Remerciements
 
 Projet conçu avec passion pour apporter des solutions concrètes basées sur l'intelligence artificielle au service de nos communautés. 
 
