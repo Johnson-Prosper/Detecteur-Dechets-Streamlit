@@ -19,9 +19,11 @@ try:
     interpreter = charger_modele()
     input_details = interpreter.get_input_details()
     output_details = interpreter.get_output_details()
-    CLASSES = ["Recyclable", "Non-Recyclable", "Organique", "Vide"]
+    
+    # ORDRE EXACT DES CLASSES (Correspondant à N, O, R de Keras)
+    CLASSES = ["Non-Recyclable", "Organique", "Recyclable"]
 
-    # Activer l'appareil photo du téléphone
+    # Activer l'appareil photo
     img_file = st.camera_input("Prendre une photo du déchet")
 
     if img_file is not None:
@@ -43,8 +45,8 @@ try:
         classe_detectee = CLASSES[meilleur_index]
         score_confiance = predictions[meilleur_index]
 
-        # Affichage du verdict
-        if score_confiance > 0.70 and classe_detectee != "Vide":
+        # Affichage du verdict (seuil à 60%)
+        if score_confiance > 0.60:
             st.success(f"Résultat : **{classe_detectee}** ({score_confiance*100:.1f}%)")
         else:
             st.warning("⚠️ Aucun déchet clairement identifié. Réessayez !")
