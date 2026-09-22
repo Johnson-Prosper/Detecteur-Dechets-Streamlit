@@ -17,7 +17,7 @@ Ce projet a été pensé comme une **solution technologique locale et accessible
 
 ---
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 * **Framework Web :** Streamlit
 * **Modèle d'IA :** MobileNetV2 (Transfer Learning)
@@ -36,11 +36,3 @@ Ce projet a été pensé comme une **solution technologique locale et accessible
    * ♻️ **Recyclable** (ex: bouteilles plastiques, cartons, canettes)
    * 🗑️ **Non-Recyclable** (ex: plastiques à usage unique souillés)
    * 🍎 **Organique** (ex: restes de nourriture, épluchures)
-
----
-
-## Équipe & Remerciements
-
-Projet conçu avec passion pour apporter des solutions concrètes basées sur l'intelligence artificielle au service de nos communautés. 
-
-Merci à l'équipe d'**IndabaX Congo** pour la promotion de l'IA sur le continent !
